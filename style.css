@@ -1,7 +1,7 @@
 /* Custom Fonts  */
 @font-face {
     font-family: 'Custom';
-    src: url('./assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
+    src: url('/assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
   }
   
 .video-container {
@@ -234,7 +234,7 @@
     padding: 10px 15px 10px 10px;
     z-index: 2; 
   }
-  .booking-link {
+  a.booking-link {
       font-weight: 800;
       font-size: 55px;
       color: #ffffff; 
