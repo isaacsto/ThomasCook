@@ -1,66 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
-
     <link rel="icon" href="https://i.imgur.com/0bERNMY.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@900&family=Titillium+Web:wght@300;900&display=swap" rel="stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik+Scribble&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Luxurious+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@900&family=Titillium+Web:wght@300;900&family=Rubik+Iso&family=Rubik+Scribble&family=Rubik+Spray+Paint&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Luxurious+Script&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/1498603cf1.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
     <title>Thomas Cook Hair</title>
-  </head>
-  <body>
+</head>
+<body>
     <div id="nav-container">
-      <nav id="nav"> 
-      <ul class="nav nav-tabs" >
-          <li class="nav-item">
-            <a href="">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="/Work">Work</a> 
-          </li>
-          <li class="nav-item login">
-            <button class="login">Sign in</button>
-          </li> 
-          <!-- <li class="nav-item book">
-          <Link to="/Book">Book</Link>
-       </li>  -->
-       </ul> 
-      </nav>
-      </div>
-    <div class="homepage-wrap">
-        <div class="video-container">
-        <div class="video-tint"></div> 
-          <video id="video" autoPlay muted loop width="2000">
-          <source src="/assets/video/tommycut1.mp4" type="video/mp4"/>
-          Your browser does not support the video tag.
-          </video>
-          <div class="button-cont">
-          <a class="booking-link" href="/">BOOK NOW</a>
+        <nav id="nav"> 
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="/Work">Work</a></li>
+                <li class="nav-item login"><button class="login">Sign in</button></li> 
+            </ul>
+        </nav>
+    </div>
+    <main id="content">
+        <!-- Dynamic contente -->
+    </main>
+
+    <!--Popup Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Sign in</h2>
           </div>
-         </div>
-        </div> 
-          <div class="service-section">
-            <h2>Services</h2>
-        <div class="service-buttons">
-            <div class="service">
-            <img src="/assets/pictures/color-light.jpeg" alt="hair" />
-            <div class="text-overlay">Color</div>
+            <div id="g_id_onload"
+                 data-client_id="378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com"
+                 data-context="signin"
+                 data-ux_mode="popup"
+                 data-login_uri="http://localhost:5500/login.html"
+                 data-auto_prompt="false">
             </div>
-            <div class="service">
-            <img src="/assets/pictures/unnamed-cut.jpeg" alt="hair" />
-            <div class="text-overlay">Cut</div>
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="rectangular"
+                 data-theme="outline"
+                 data-text="signin_with"
+                 data-size="large"
+                 data-logo_alignment="left">
             </div>
+          </div>
         </div>
-        </div>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-  </body>
-  </html>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('a[data-link]');
+            const content = document.getElementById('content');
+            const loginModal = document.getElementById('loginModal');
+            const loginButton = document.querySelector('button.login');
+            const closeButton = document.querySelector('.close');
+
+            async function loadContent(page) {
+                try {
+                    const response = await fetch(`${page}.html`);
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    const html = await response.text();
+                    content.innerHTML = html;
+                } catch (error) {
+                    console.error('Fetch error:', error);
+                    content.innerHTML = '<p>Sorry, there was an error loading the page.</p>';
+                }
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const page = event.target.getAttribute('data-link');
+                    history.pushState({ page }, "", `#${page}`);
+                    loadContent(page);
+                });
+            });
+
+            window.addEventListener('popstate', (event) => {
+                if (event.state && event.state.page) {
+                    loadContent(event.state.page);
+                }
+            });
+
+            // Load initial content based on URL hash or default to 'home'
+            const initialPage = location.hash.replace('#', '') || 'home';
+            loadContent(initialPage);
+
+            // Event listener for login button to show modal
+            loginButton.addEventListener('click', () => {
+                loginModal.style.display = "block";
+                google.accounts.id.initialize({
+                    client_id: "378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com",
+                    callback: handleCredentialResponse
+                });
+                google.accounts.id.renderButton(
+                    document.querySelector('.g_id_signin'),
+                    { theme: "outline", size: "large" }
+                );
+            });
+
+            // Event listener for close button to hide modal
+            closeButton.addEventListener('click', () => {
+                loginModal.style.display = "none";
+            });
+
+            // Close the modal when clicking outside of it
+            window.addEventListener('click', (event) => {
+                if (event.target === loginModal) {
+                    loginModal.style.display = "none";
+                }
+            });
+        });
+
+        function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+        }
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
