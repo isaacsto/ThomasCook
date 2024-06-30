@@ -33,7 +33,7 @@
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     position: relative;
     width: fit-content; 
@@ -103,7 +103,11 @@
     display: flex; 
     align-items: flex-end; 
     padding-left: 10px; 
-  
+    cursor: pointer;
+  }
+
+  .header a.main:hover {
+  color: rgb(139, 2, 243)
   }
   /* Nav Styles  */
   ul {
@@ -316,7 +320,7 @@
   /* service buttons */ 
   .service-section h2 {
     text-align: center; 
-    margin-top: 20px; 
+    margin: 20px; 
     font-size: 40px; 
     font-weight: 400; 
     letter-spacing: 5px;
@@ -326,7 +330,7 @@
     display: flex; 
     justify-content: center;
     gap: 8rem; 
-    padding: 40px; 
+    padding: 20px; 
   }
   .service {
     position: relative; 
