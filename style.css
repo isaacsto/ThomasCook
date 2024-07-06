@@ -1,3 +1,7 @@
+h2 {
+  font-size: 30px; 
+}
+
 /* Custom Fonts  */
 @font-face {
     font-family: 'Custom';
@@ -22,7 +26,7 @@
   display: flex; 
 }
 .modal-header h2 {
-  font-size: 20px; 
+ 
   width: 100%; 
   font-weight: 600; 
   margin: 0; 
@@ -139,6 +143,7 @@
     border-radius: 2px; 
     background-color: #ffffff; 
     z-index: 2000; 
+    cursor: pointer; 
     font-family: "Roboto Mono", monospace;
   }
   
@@ -317,10 +322,15 @@
   }
   
   /* service buttons */ 
+  .service-section {   
+    padding-top: 20px; 
+    margin-top: 30px; 
+    border-top: 1px solid #aaa;
+  }
+
   .service-section h2 {
     text-align: center; 
     margin: 20px; 
-    font-size: 40px; 
     font-weight: 400; 
     letter-spacing: 5px;
     font-family: sans-serif;
@@ -408,4 +418,32 @@
 .booking-header {
   text-align: center; 
   font-family: Custom;
+}
+
+.info-section {
+  text-align:left; 
+  padding: 20px 0; 
+  margin: 30px 0; 
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.info-section p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.info-section h2{
+  font-family: sans-serif; 
+  letter-spacing: 5px;
+}
+
+.info-section a:hover {
+  color: rgb(139, 2, 243); 
+  text-decoration: none; 
+}
+.info-section a {
+  text-decoration: none; 
+}
+
+.info-section a:visited {
+  color: #888; 
 }
