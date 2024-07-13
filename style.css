@@ -366,12 +366,34 @@ h2 {
     justify-content: center; 
     background-color: rgba(0, 0, 0, 0.2); 
     font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
   }
   
   .service:hover .text-overlay{
     background-color: rgba(0, 0, 0, 0.5); 
   }
   
+.text-overlay a {
+  text-decoration: none;
+  color: #fff; 
+  cursor: pointer; 
+}
+
+.text-overlay a.book-link {
+  font-size: 12px; 
+  font-weight: 600; 
+  color: #ffffff; 
+  text-decoration: none; 
+  font-family: Custom;
+}
+
+.text-overlay a:hover{
+  color: #bbb; 
+}
+
+
   /* Portfolio/Work  */
   
   .slider {
