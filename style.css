@@ -1,6 +1,13 @@
 h2 {
   font-size: 30px; 
+  font-weight: bold; 
+  font-family: sans-serif; 
+  letter-spacing: 5px;
+  margin: 20px 0; 
+  color: #888; 
 }
+
+
 
 /* Custom Fonts  */
 @font-face {
@@ -328,13 +335,9 @@ h2 {
     border-top: 1px solid #aaa;
   }
 
-  .service-section h2 {
-    text-align: center; 
-    margin: 20px; 
-    font-weight: 400; 
-    letter-spacing: 5px;
-    font-family: sans-serif;
-  }
+.service-section h2 {
+  text-align: center; 
+}
   .service-buttons{
     display: flex; 
     justify-content: center;
