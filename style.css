@@ -392,7 +392,13 @@ h2 {
 .text-overlay a:hover{
   color: #bbb; 
 }
+.book-link {
+  visibility: hidden;
+}
 
+.service:hover .book-link {
+  visibility: visible;
+}
 
   /* Portfolio/Work  */
   
