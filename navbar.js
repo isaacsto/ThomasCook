@@ -7,6 +7,7 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.shadowRoot.innerHTML = `
             <style>
+         
             #nav-container {    
                 display: flex; 
                 flex-direction: column;
@@ -112,7 +113,9 @@ class Navbar extends HTMLElement {
                     cursor: pointer;
                     font-family: "Roboto Mono", monospace;
                 }
+           
             </style>
+          
             <div id="nav-container">
             <div class="header">
             <div class="header-link">
@@ -141,6 +144,8 @@ class Navbar extends HTMLElement {
                 </ul> 
             </nav>
             </div>
+          
+         
         `;
 
     // Add event listener for the sign-in button

@@ -7,7 +7,9 @@ h2 {
   color: #888; 
 }
 
-
+body {
+  margin: 0; 
+}
 
 /* Custom Fonts  */
 @font-face {
@@ -77,6 +79,7 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    position: relative; 
 }
 
   .logoWrap {
@@ -175,6 +178,15 @@ h2 {
     background: #ffffff; 
     font-size: 14px; 
     cursor: pointer 
+  }
+
+  .nav-wrap {
+    position: relative 
+  }
+  @media screen and (max-width:641px) {
+    .nav-wrap {
+      padding-bottom: 80px; 
+    }
   }
   /*Login styles*/ 
   
