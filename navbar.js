@@ -103,10 +103,11 @@ class Navbar extends HTMLElement {
                     color: rgb(139, 2, 243);
                     font-weight: 600; 
                 }
-                .nav-item.book button {
+                .nav-item.book a{
                     border: none; 
                     font: sans-serif; 
-                    background: #ffffff; 
+                   
+                   
                     font-size: 14px; 
                     cursor: pointer;
                     font-family: "Roboto Mono", monospace;
