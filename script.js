@@ -64,6 +64,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Get the modal
+    const modal = document.getElementById('loginModal');
+    
+    // Get the button that opens the modal
+    const loginButton = document.querySelector('.login button');
+    
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName('close')[0];
+    
+    // When the user clicks on the button, open the modal
+    if (loginButton) {
+        loginButton.onclick = () => {
+            modal.style.display = 'block';
+        };
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    if (span) {
+        span.onclick = () => {
+            modal.style.display = 'none';
+        };
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
+});
+
+
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
 }
