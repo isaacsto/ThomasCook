@@ -7,6 +7,16 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.shadowRoot.innerHTML = `
             <style>
+            #nav-container {    
+                display: flex; 
+                flex-direction: column;
+                width: 100vw; 
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+            }
             .logoWrap {
                 display: flex; 
                 justify-content: center; 
@@ -25,6 +35,7 @@ class Navbar extends HTMLElement {
               .header {
                 position: relative; 
                 background-color: #ffffff;
+                padding: 0 2% 0 0; 
               }
               
               .header-link{
