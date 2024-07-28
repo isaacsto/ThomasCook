@@ -15,21 +15,60 @@
     <script src="navbar.js" defer></script>
 </head>
 <body>
-    <div id="nav-container">
-      <div class="header">
-        <div class="header-link">
-         <a href="/" class="main">Thomas Cook Hair</a>
-         <div class="logo-container header">
-          </div>
-          <div class="logo-wrap-small">
-          <a href="/"> <img src="/assets/pictures/thincleartwo.png" alt="thomas cook hair logo" /></a> 
-             </div>
-          </div>
-      </div>
+  
+
       <custom-navbar></custom-navbar>
-    </div>
+ 
     <main id="content">
-        <!-- Dynamic content -->
+      <div class="homepage-wrap">
+        <div class="video-container">
+            <div class="video-tint"></div> 
+            <video id="video" autoPlay muted loop width="2000">
+                <source src="/assets/video/tommycut1.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+            <div class="button-cont">
+                <a class="booking-link" href="/book.html" data-link="book">BOOK NOW</a>
+            </div>
+        </div>
+      </div> 
+      
+      <div class="service-section">
+        <h2>Services</h2>
+        <div class="service-buttons">
+          
+        <div class="service">
+              <img src="/assets/pictures/color-light.jpeg" alt="hair" />
+              <div class="text-overlay">
+              <a class="work-link" href="/work.html" data-link="work">
+             Color</a>
+             <a class="book-link" href="/book.html" data-link="book">
+               Book </a>
+            </div>
+          </div>
+           
+                <div class="service">
+                    <img src="/assets/pictures/unnamed-cut.jpeg" alt="hair" />
+                    <div class="text-overlay">
+                    <a class="work-link" href="/work.html" data-link="work">
+                   Cut</a>
+                   <a class="book-link" href="/book.html" data-link="work">
+                      Book</a>
+                  </div>
+                </div>
+            </a>
+        </div>
+      </div>
+      <footer>
+          <div class="info-section">
+              <h2><a href="https://hairstory.com/">Hairstory</a></h2>
+              <p>95 5th Ave, 5th Floor</p>
+              <p>New York, NY 10003</p>
+              
+              <p>Hairstory is a safe space welcoming all genders, hair textures, and bodies. Only natural, non-toxic products are used.</p>
+              <p>Tommy offers house calls for those unable to visit the salon. </p>
+              </div>  
+      </footer>
     </main>
 
     <!--Popup Modal -->

@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    links.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const page = event.target.getAttribute('data-link');
-            history.pushState({ page }, "", `#${page}`);
-            loadContent(page);
-        });
-    });
+    // links.forEach(link => {
+    //     link.addEventListener('click', (event) => {
+    //         event.preventDefault();
+    //         const page = event.target.getAttribute('data-link');
+    //         history.pushState({ page }, "", `#${page}`);
+    //         loadContent(page);
+    //     });
+    // });
 
     window.addEventListener('popstate', (event) => {
         if (event.state && event.state.page) {
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Load initial content based on URL hash or default to 'home'
-    const initialPage = location.hash.replace('#', '') || 'home';
-    loadContent(initialPage);
+    // // Load initial content based on URL hash or default to 'home'
+    // const initialPage = location.hash.replace('#', '') || 'home';
+    // loadContent(initialPage);
 
     // Event listener for login button to show modal
     loginButton.addEventListener('click', () => {

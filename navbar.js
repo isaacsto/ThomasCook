@@ -1,12 +1,52 @@
 class Navbar extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
 
-    connectedCallback() {
-        this.shadowRoot.innerHTML = `
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `
             <style>
+            .logoWrap {
+                display: flex; 
+                justify-content: center; 
+              }
+              .logoWrap img {
+                width: 300px; 
+              }
+              .logo-wrap-small img {
+                width: 140px; 
+              }
+              
+              .homepage-wrap {
+                height: 100%; 
+              }
+              
+              .header {
+                position: relative; 
+                background-color: #ffffff;
+              }
+              
+              .header-link{
+                display: flex; 
+                justify-content: space-between; 
+              }
+              .header a.main {
+                text-decoration: none; 
+                font-size: 25px; 
+                font-weight: 600; 
+                color: #000000; 
+                font-family: sans-serif;  
+                background-color: #ffffff ;
+                display: flex; 
+                align-items: flex-end; 
+                padding-left: 10px; 
+                cursor: pointer;
+              }
+            
+              .header a.main:hover {
+              color: rgb(139, 2, 243)
+              }
                 /* Nav Styles  */
                 ul {
                     list-style-type: none; 
@@ -61,7 +101,17 @@ class Navbar extends HTMLElement {
                     font-family: "Roboto Mono", monospace;
                 }
             </style>
-         
+            <div id="nav-container">
+            <div class="header">
+            <div class="header-link">
+             <a href="/" class="main">Thomas Cook Hair</a>
+             <div class="logo-container header">
+              </div>
+              <div class="logo-wrap-small">
+              <a href="/"> <img src="/assets/pictures/thincleartwo.png" alt="thomas cook hair logo" /></a> 
+                 </div>
+              </div>
+          </div>
             <nav id="nav"> 
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -78,19 +128,22 @@ class Navbar extends HTMLElement {
                     </li>  
                 </ul> 
             </nav>
+            </div>
         `;
 
-        // Add event listener for the sign-in button
-        this.shadowRoot.querySelector('.login button').addEventListener('click', () => {
-            // Custom logic for the sign-in button
-            console.log('Sign-in button clicked');
-            // Example: Open the login modal
-            const loginModal = document.getElementById('loginModal');
-            if (loginModal) {
-                loginModal.style.display = 'block';
-            }
-        });
-    }
+    // Add event listener for the sign-in button
+    this.shadowRoot
+      .querySelector(".login button")
+      .addEventListener("click", () => {
+        // Custom logic for the sign-in button
+        console.log("Sign-in button clicked");
+        // Example: Open the login modal
+        const loginModal = document.getElementById("loginModal");
+        if (loginModal) {
+          loginModal.style.display = "block";
+        }
+      });
+  }
 }
 
-customElements.define('custom-navbar', Navbar);
+customElements.define("custom-navbar", Navbar);
