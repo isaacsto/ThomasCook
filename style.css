@@ -266,7 +266,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px; 
   }
-  
+
   .popup-content {
    padding: 30px; 
   }
@@ -293,7 +293,9 @@ body {
   }
   
   /* homepage styles */
-  
+  #content {
+    padding-top: 80px; 
+  }
   .booking-link:hover {
     color:rgb(139, 2, 243); 
     border: none;
