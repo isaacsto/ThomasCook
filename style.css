@@ -134,14 +134,15 @@
   text-decoration: none;
   color: #fff; 
   cursor: pointer; 
+  
 }
 
 .text-overlay a.book-link {
-  font-size: 12px; 
   font-weight: 600; 
   color: #ffffff; 
   text-decoration: none; 
   font-family: Custom;
+  font-size: 16px; 
 }
 
 .text-overlay a:hover{
