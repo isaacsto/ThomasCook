@@ -84,7 +84,7 @@ class Navbar extends HTMLElement {
                     color: #000000; 
                     text-decoration: none;
                     padding: 0px 20px; 
-                    font-size: 14px; 
+                    font-size: 20px; 
                     border-radius: 2px; 
                     background-color: #ffffff; 
                     z-index: 2000; 
@@ -98,7 +98,7 @@ class Navbar extends HTMLElement {
                     padding: 5px 10px; 
                     border-radius: 2px; 
                     cursor: pointer;
-                    font-size: 12px; 
+                    font-size: 19px; 
                     font-family: "Roboto Mono", monospace;
                 }
                 .nav-item.login button:hover, .nav-item.book button:hover, .nav-item a:hover {
@@ -110,7 +110,7 @@ class Navbar extends HTMLElement {
                     font: sans-serif; 
                    
                    
-                    font-size: 14px; 
+                    font-size: 20px; 
                     cursor: pointer;
                     font-family: "Roboto Mono", monospace;
                 }
