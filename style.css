@@ -35,12 +35,12 @@
 
 
   .booking-link:hover {
-    color:rgb(139, 2, 243); 
+    color:rgb(170, 50, 255);
     border: none;
     text-shadow: none; 
   }
   .button-cont:hover {
-    border: solid 2px rgb(139, 2, 243); 
+    border: solid 2px rgb(170, 50, 255); 
   }
   
   .button-cont {
@@ -174,7 +174,7 @@
 }
 
 .info-section a:hover {
-  color: rgb(139, 2, 243); 
+  color: rgb(170, 50, 255);
   text-decoration: none; 
 }
 .info-section a {

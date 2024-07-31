@@ -51,7 +51,7 @@ class Navbar extends HTMLElement {
           cursor: pointer;
         }
         .header a.main:hover {
-          color: rgb(139, 2, 243);
+          color: rgb(170, 50, 255); 
         }
         ul {
           list-style-type: none; 
@@ -94,7 +94,7 @@ class Navbar extends HTMLElement {
           font-family: "Roboto Mono", monospace;
         }
         .nav-item.login button:hover, .nav-item.book button:hover, .nav-item a:hover {
-          color: rgb(139, 2, 243);
+          color: rgb(170, 50, 255); 
           font-weight: 600; 
         }
         .nav-item.book a {
@@ -194,49 +194,49 @@ class Navbar extends HTMLElement {
       </div>
     `;
 
-    window.onload = () => {
-      google.accounts.id.initialize({
-        client_id: "378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com",
-        callback: this.handleCredentialResponse
+       // Initialize Google Sign-In
+       window.addEventListener('load', () => {
+        if (window.google && google.accounts && google.accounts.id) {
+          google.accounts.id.initialize({
+            client_id: "378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com",
+            callback: this.handleCredentialResponse
+          });
+          google.accounts.id.renderButton(
+            this.shadowRoot.querySelector('.g_id_signin'),
+            { theme: "outline", size: "large" }
+          );
+        }
       });
-      google.accounts.id.renderButton(
-        this.shadowRoot.querySelector('.g_id_signin'),
-        { theme: "outline", size: "large" }
-      );
-    };
-
-    // Event listener for sign-in button
-    this.shadowRoot.querySelector(".login button").addEventListener("click", () => {
-      const loginModal = this.shadowRoot.getElementById("loginModal");
-      if (loginModal) {
-        loginModal.style.display = "block";
-      }
-    });
-
-    // Event listener for close button 
-    this.shadowRoot.querySelector(".modal .close").addEventListener("click", () => {
-      const loginModal = this.shadowRoot.getElementById("loginModal");
-      if (loginModal) {
-        loginModal.style.display = "none";
-      }
-    });
-
-    // Close modal when clicking outside 
-    window.addEventListener("click", (event) => {
-      const loginModal = this.shadowRoot.getElementById("loginModal");
-      if (event.target === loginModal) {
-        loginModal.style.display = "none";
-      }
-    });
+  
+      // Event listener for sign-in button
+      this.shadowRoot.querySelector(".login button").addEventListener("click", () => {
+        const loginModal = this.shadowRoot.getElementById("loginModal");
+        if (loginModal) {
+          loginModal.style.display = "block";
+        }
+      });
+  
+      // Event listener for close button 
+      this.shadowRoot.querySelector(".modal .close").addEventListener("click", () => {
+        const loginModal = this.shadowRoot.getElementById("loginModal");
+        if (loginModal) {
+          loginModal.style.display = "none";
+        }
+      });
+  
+      // Close modal when clicking outside 
+      window.addEventListener("click", (event) => {
+        const loginModal = this.shadowRoot.getElementById("loginModal");
+        if (event.target === loginModal) {
+          loginModal.style.display = "none";
+        }
+      });
+    }
+  
+    handleCredentialResponse(response) {
+      // Handle the response here. For example, you might store the token or send it to your backend for verification
+      console.log('Credential Response:', response);
+    }
   }
-
-  handleCredentialResponse(response) {
-    // Handle the response here. For example, you might store the token or send it to your backend for verification
-    console.log('Credential Response:', response);
-  }
-}
-
-
-customElements.define("custom-navbar", Navbar);
-
-
+  
+  customElements.define("custom-navbar", Navbar);
