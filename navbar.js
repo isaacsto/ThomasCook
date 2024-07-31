@@ -194,18 +194,18 @@ class Navbar extends HTMLElement {
       </div>
     `;
 
-    this.shadowRoot.querySelector('script[src="https://accounts.google.com/gsi/client"]').addEventListener('load', () => {
+    window.onload = () => {
       google.accounts.id.initialize({
         client_id: "378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com",
-        callback: handleCredentialResponse
+        callback: this.handleCredentialResponse
       });
       google.accounts.id.renderButton(
         this.shadowRoot.querySelector('.g_id_signin'),
         { theme: "outline", size: "large" }
       );
-    });
+    };
 
-    // event listener for sign-in button
+    // Event listener for sign-in button
     this.shadowRoot.querySelector(".login button").addEventListener("click", () => {
       const loginModal = this.shadowRoot.getElementById("loginModal");
       if (loginModal) {
@@ -213,7 +213,7 @@ class Navbar extends HTMLElement {
       }
     });
 
-    // event listener for close button 
+    // Event listener for close button 
     this.shadowRoot.querySelector(".modal .close").addEventListener("click", () => {
       const loginModal = this.shadowRoot.getElementById("loginModal");
       if (loginModal) {
@@ -229,7 +229,14 @@ class Navbar extends HTMLElement {
       }
     });
   }
+
+  handleCredentialResponse(response) {
+    // Handle the response here. For example, you might store the token or send it to your backend for verification
+    console.log('Credential Response:', response);
+  }
 }
 
 
 customElements.define("custom-navbar", Navbar);
+
+
