@@ -2,116 +2,98 @@
 <script src="navbar.js" defer></script>
 <custom-navbar></custom-navbar>
 <div class="grid" style="margin-top: 10px; ">
-    <div class="masonry">
-        <div class="item">
-          <img src="assets/pictures/hair.jpeg" alt="Convenient embedded wall unit" width="496" height="286" loading="lazy" decoding="async">
-        </div>
+    <div class="grid-column">
+      <div class="item">
+        <img src="/assets/pictures/cool.jpeg" alt="This modern design creates a big impact with the wall of shelves" width="640" height="427" loading="lazy" decoding="async">
+    </div>
+    
         <div class="item">
           <img src="assets/pictures/lambchops.jpg" alt="Minimalist closet in [state]" width="640" height="426" loading="lazy" decoding="async">
         </div>
         <div class="item">
           <img src="/assets/pictures/hair2.jpeg" alt="closet remodeling services in [state]" width="320" height="480" loading="lazy" decoding="async">
         </div>
-        <div class="item">
-          <img src="assets/pictures/hair3.jpeg" alt="Modern open tread closet" loading="lazy" decoding="async">
-        </div>
+        
+      </div>
+      <div class="grid-column">
         <div class="item">
             <img src="/assets/pictures/boyf.jpeg" alt="start-to-finish design and remodeling services for your closet by [company]" loading="lazy" decoding="async">
         </div>
         <div class="item">
-            <img src="/assets/pictures/cool.jpeg" alt="This modern design creates a big impact with the wall of shelves" width="640" height="427" loading="lazy" decoding="async">
-          
+          <img src="/assets/pictures/sky_dye.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
         </div>
+     
+
         <div class="item">
           <img src="/assets/pictures/balcony.jpeg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
         </div>
         <div class="item">
           <img src="/assets/pictures/wolf-cut.jpeg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
         </div>
-        <div class="item">
-          <img src="/assets/pictures/curls_red.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
+
         </div>
-        <div class="item">
-          <img src="/assets/pictures/fire_escape_s.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
-        </div>
+        <div class="grid-column">
+          <div class="item">
+            <img src="/assets/pictures/fire_escape_s.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
+          </div>
+     
+
         <div class="item">
           <img src="/assets/pictures/mullet_x.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
         </div>
         <div class="item">
-          <img src="/assets/pictures/peasant_top_.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
-        </div>
-        <div class="item">
-          <img src="/assets/pictures/roof_glasses.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
-        </div>
-        <div class="item">
-          <img src="/assets/pictures/sky_dye.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
-        </div>
-        <!-- <div class="item">
-        <video autoPlay muted loop>
-          <source src="/assets/video/final_mov.mp4" type="video/mp4" width="400"/>
-          Your browser does not support the video tag.
-      </video>
-        </div> -->
-        <div class="item">
             
           <img src="/assets/pictures/sinkdye.JPG" alt="Modern Closet design by [company]" width="496" height="323" loading="lazy" decoding="async">
         </div> 
+        <div class="item">
+          <img src="/assets/pictures/peasant_top_.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
+        </div>
+        </div>
+        <div class="grid-column">
+         
+          <div class="item">
+            <img src="/assets/pictures/curls_red.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
+          </div>
+      
+        <div class="item">
+          <img src="/assets/pictures/roof_glasses.jpg" alt="Minimalist Bedroom - by [company]" width="640" height="428" loading="lazy" decoding="async">
+        </div>
+   
+        <div class="item">
+          <img src="assets/pictures/hair.jpeg" alt="Convenient embedded wall unit" width="496" height="286" loading="lazy" decoding="async">
+        </div>
+        <div class="item">
+          <img src="assets/pictures/hair3.jpeg" alt="Modern open tread closet" loading="lazy" decoding="async">
+        </div>
+      </div>
       </div>
     </div>
     <script src="script.js" defer></script>
-      <script>
-        // Initialization for ES Users
-        import {
-          Collapse,
-          initTE,
-        } from "tw-elements";
-        
-        initTE({ Collapse });
-        </script>
-        <script>
-        // external js: masonry.pkgd.js, imagesloaded.pkgd.js
-        
-        // init Masonry
-        var grid = document.querySelector('.grid');
-        
-        var msnry = new Masonry( grid, {
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          percentPosition: true
-        });
-        
-        imagesLoaded( grid ).on( 'progress', function() {
-          // layout Masonry after each image loads
-          msnry.layout();
-        });</script>
+
        <style>
         /* ---- grid ---- */
         .grid {
-          display: flex; 
-          width: 100%; 
-          justify-content: center;
-          align-items: center;
+        display: grid;
+        gap: 1rem;
+        align-items: start;
+        width: fit-content;
+        margin-inline: auto;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 80px; 
         }
-        .masonry {
-            -webkit-column-count: 5;
-            -moz-column-count: 5;
-            column-count: 5;
-            -webkit-column-gap: 1em;
-            -moz-column-gap: 1em;
-            column-gap: 1em;
-            margin: 1.5em;
-            padding: 0;
-            font-size: .85em;
-            width: 97%; 
-            margin: 75px auto;
+      .grid-column {
+          display: flex;
+        flex-direction: column;
+      
         }
         
         .item {
             display: inline-block;
             padding: 0;
-            margin: 0 0 1.5em;
+            margin: 0 0 1.5rem;
             width: 100%;
             box-sizing: border-box;
+            max-width: 330px;  
         }
         
         .item img {
@@ -120,30 +102,6 @@
         }
     
         /* Media Queries */
-        @media only screen and (max-width: 768px) {
-            .masonry {
-                -moz-column-count: 2;
-                -webkit-column-count: 2;
-                column-count: 2;
-                max-width: 90%;
-            }
-        }
-    
-        @media only screen and (min-width: 769px) and (max-width: 1200px) {
-            .masonry {
-                -moz-column-count: 4;
-                -webkit-column-count: 4;
-                column-count: 4;
-                max-width: 80%;
-            }
-        }
-    
-        @media only screen and (min-width: 1201px) {
-            .masonry {
-                -moz-column-count: 5;
-                -webkit-column-count: 5;
-                column-count: 5;
-            }
-        }
+  
     </style>
     
