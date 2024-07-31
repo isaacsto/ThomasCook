@@ -194,27 +194,34 @@ class Navbar extends HTMLElement {
       </div>
     `;
 
-    // Add event listener for the sign-in button
-    this.shadowRoot
-      .querySelector(".login button")
-      .addEventListener("click", () => {
-        const loginModal = this.shadowRoot.getElementById("loginModal");
-        if (loginModal) {
-          loginModal.style.display = "block";
-        }
+    this.shadowRoot.querySelector('script[src="https://accounts.google.com/gsi/client"]').addEventListener('load', () => {
+      google.accounts.id.initialize({
+        client_id: "378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com",
+        callback: handleCredentialResponse
       });
+      google.accounts.id.renderButton(
+        this.shadowRoot.querySelector('.g_id_signin'),
+        { theme: "outline", size: "large" }
+      );
+    });
 
-    // Add event listener for the close button in the modal
-    this.shadowRoot
-      .querySelector(".modal .close")
-      .addEventListener("click", () => {
-        const loginModal = this.shadowRoot.getElementById("loginModal");
-        if (loginModal) {
-          loginModal.style.display = "none";
-        }
-      });
+    // event listener for sign-in button
+    this.shadowRoot.querySelector(".login button").addEventListener("click", () => {
+      const loginModal = this.shadowRoot.getElementById("loginModal");
+      if (loginModal) {
+        loginModal.style.display = "block";
+      }
+    });
 
-    // Close the modal when clicking outside of it
+    // event listener for close button 
+    this.shadowRoot.querySelector(".modal .close").addEventListener("click", () => {
+      const loginModal = this.shadowRoot.getElementById("loginModal");
+      if (loginModal) {
+        loginModal.style.display = "none";
+      }
+    });
+
+    // Close modal when clicking outside 
     window.addEventListener("click", (event) => {
       const loginModal = this.shadowRoot.getElementById("loginModal");
       if (event.target === loginModal) {
@@ -223,5 +230,6 @@ class Navbar extends HTMLElement {
     });
   }
 }
+
 
 customElements.define("custom-navbar", Navbar);
