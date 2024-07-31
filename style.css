@@ -93,7 +93,7 @@
   .service-buttons{
     display: flex; 
     justify-content: center;
-    gap: 1rem; 
+    gap: 4.5rem; 
     padding: 20px; 
   }
   .service {
