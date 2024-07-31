@@ -82,7 +82,7 @@ body {
     position: relative; 
 }
 
-  .logoWrap {
+  /* .logoWrap {
     display: flex; 
     justify-content: center; 
   }
@@ -96,12 +96,7 @@ body {
   .homepage-wrap {
     height: 100%; 
   }
-  
-  .header {
-    position: relative; 
-    background-color: #ffffff;
-  }
-  
+
   .header-link{
     display: flex; 
     justify-content: space-between; 
@@ -123,7 +118,7 @@ body {
   color: rgb(139, 2, 243)
   }
   /* Nav Styles  */
-  ul {
+  /* ul {
     list-style-type: none; 
     padding: 5px; 
   
@@ -187,7 +182,7 @@ body {
     .nav-wrap {
       padding-bottom: 80px; 
     }
-  }
+  } */ */
   /*Login styles*/ 
   
   .forms-section fieldset {
@@ -294,7 +289,7 @@ body {
   
   /* homepage styles */
   #content {
-    padding-top: 80px; 
+    padding-top: 100px; 
   }
   .booking-link:hover {
     color:rgb(139, 2, 243); 

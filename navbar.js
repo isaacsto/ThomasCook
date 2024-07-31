@@ -36,7 +36,8 @@ class Navbar extends HTMLElement {
               .header {
                 position: relative; 
                 background-color: #ffffff;
-                padding: 0 2% 0 0; 
+                padding: 10px 5%;
+               
               }
               
               .header-link{
@@ -117,6 +118,7 @@ class Navbar extends HTMLElement {
             </style>
           
             <div id="nav-container">
+            
             <div class="header">
             <div class="header-link">
              <a href="/" class="main">Thomas Cook Hair</a>
@@ -127,22 +129,22 @@ class Navbar extends HTMLElement {
                  </div>
               </div>
           </div>
-            <nav id="nav"> 
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/work.html">Work</a> 
-                    </li>
-                    <li class="nav-item login">
-                        <button class="login">Sign in</button>
-                    </li> 
-                    <li class="nav-item book">
-                        <a href="/book.html">Book</a>
-                    </li>  
-                </ul> 
-            </nav>
+          <nav id="nav"> 
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/work.html">Work</a> 
+              </li>
+              <li class="nav-item login">
+                  <button class="login">Sign in</button>
+              </li> 
+              <li class="nav-item book">
+                  <a href="/book.html">Book</a>
+              </li>  
+          </ul> 
+      </nav>
             </div>
           
          
