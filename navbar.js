@@ -141,6 +141,8 @@ class Navbar extends HTMLElement {
       </style>
       <script src="https://apis.google.com/js/platform.js" async defer></script>
       <script src="https://accounts.google.com/gsi/client" async></script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
       <div id="nav-container">
         <div class="header">
           <div class="header-link">
@@ -190,6 +192,11 @@ class Navbar extends HTMLElement {
                data-size="large"
                data-logo_alignment="left">
           </div>
+          <fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
         </div>
       </div>
     `;
@@ -234,9 +241,51 @@ class Navbar extends HTMLElement {
     }
   
     handleCredentialResponse(response) {
-      // Handle the response here. For example, you might store the token or send it to your backend for verification
+   
       console.log('Credential Response:', response);
     }
   }
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1708312423304830',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v11.0'
+    });
+    
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  function statusChangeCallback(response) {
+    if (response.status === 'connected') {
+  
+      console.log('Logged in and authenticated');
+
+      FB.api('/me', {fields: 'name,email'}, function(response) {
+        console.log(response);
+      });
+    } else {
+     
+      console.log('Not authenticated');
+    }
+  }
+
+
   
   customElements.define("custom-navbar", Navbar);
