@@ -184,3 +184,48 @@
 .info-section a:visited {
   color: #888; 
 }
+
+       /* ---- grid ---- */
+       .grid {
+        display: grid;
+        gap: 1rem;
+        align-items: start;
+        width: fit-content;
+        margin-inline: auto;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 120px; 
+        }
+      .grid-column {
+          display: flex;
+        flex-direction: column;
+      
+        }
+        
+        .item {
+            display: inline-block;
+            padding: 0;
+            margin: 0 0 1.5rem;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 330px;  
+        }
+        
+        .item img {
+            width: 100%;
+            height: auto; /* Ensures images maintain aspect ratio */
+        }
+    
+        /* Media Queries */
+
+
+  
+        .booking-header {
+          text-align: center; 
+          font-family: Custom;
+          padding-top: 165px;
+        }
+        
+        iframe {
+            border: 1px solid #CCC; 
+        }
+   

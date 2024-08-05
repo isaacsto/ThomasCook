@@ -139,9 +139,7 @@ class Navbar extends HTMLElement {
           cursor: pointer;
         }
       </style>
-      <script src="https://apis.google.com/js/platform.js" async defer></script>
-      <script src="https://accounts.google.com/gsi/client" async></script>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
 
       <div id="nav-container">
         <div class="header">
