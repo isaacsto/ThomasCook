@@ -247,6 +247,5 @@
      
         .object-contain {
           display: none!important;
-          -o-object-fit: contain;
-          object-fit: contain;
+          
       }
