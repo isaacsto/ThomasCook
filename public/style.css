@@ -168,6 +168,7 @@
   padding: 40px 5%; 
   margin: 30px 50px; 
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; 
 }
 
 .info-section p {
