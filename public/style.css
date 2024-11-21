@@ -182,6 +182,7 @@
 }
 .info-section a {
   text-decoration: none; 
+  color: #000; 
 }
 
 .info-section a:visited {
