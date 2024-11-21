@@ -16,6 +16,11 @@ class Navbar extends HTMLElement {
           z-index: 1000;
         
         }
+      .header-link a h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        display: flex; 
+        justify-content: space-between; 
+        }
         .logoWrap {
           display: flex; 
           justify-content: center; 
@@ -34,10 +39,7 @@ class Navbar extends HTMLElement {
           background-color: #ffffff;
           padding: 10px 5%;
         }
-        .header-link{
-          display: flex; 
-          justify-content: space-between; 
-        }
+     
         .header a.main {
           text-decoration: none; 
           font-size: 25px; 
