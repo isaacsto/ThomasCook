@@ -16,10 +16,13 @@ class Navbar extends HTMLElement {
           z-index: 1000;
         
         }
+          .header-link {
+             display: flex; 
+        justify-content: space-between; 
+          }
       .header-link a h1 {
         font-family: "Roboto Condensed", sans-serif;
-        display: flex; 
-        justify-content: space-between; 
+     
         }
         .logoWrap {
           display: flex; 
