@@ -167,6 +167,9 @@
 }
 
 /* info section */
+h2 a svg {
+  width: 200px; 
+}
 .info-wrap {
   display: flex; 
   justify-content: center;
