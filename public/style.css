@@ -231,14 +231,17 @@
           padding-top: 165px;
         }
         
-        .book-wrap {
+        .card-wrap {
           display: flex; 
           justify-content: center; 
         }
 
+        .book-wrap {
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+        }
         iframe {
             border-radius: 20px; 
-            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          
             max-width: 1400px; 
         }
      
