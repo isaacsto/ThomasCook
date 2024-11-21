@@ -173,7 +173,7 @@ class Navbar extends HTMLElement {
         <div class="modal-content">
           <div class="modal-header">
             <span class="close">&times;</span>
-            <h2>Sign in</h2>
+            <h2   style="font-family: Custom; margin:10px; ">Sign in</h2>
           </div>
           <div id="g_id_onload"
                data-client_id="378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com"
