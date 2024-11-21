@@ -163,7 +163,7 @@ class Navbar extends HTMLElement {
               <button class="login">Sign in</button>
             </li> 
             <li class="nav-item book">
-              <a href="/book.html">Book</a>
+              <a href="/public/book.html">Book</a>
             </li>  
           </ul> 
         </nav>
