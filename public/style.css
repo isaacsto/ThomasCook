@@ -166,6 +166,10 @@
 }
 
 /* info section */
+.info-wrap {
+  display: flex; 
+  justify-content: center;
+}
 .info-section {
   text-align:left; 
   padding: 40px 5%; 
