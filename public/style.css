@@ -1,7 +1,7 @@
 /* general  */
 @font-face {
     font-family: 'Custom';
-    src: url('/public/assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
+    src: url('/assets/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
   }
   
   body {
