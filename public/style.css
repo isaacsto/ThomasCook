@@ -54,7 +54,6 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     color: white;
     font-size: 24px;
     border: solid 2px #ffffff;
@@ -63,7 +62,7 @@
   }
   a.booking-link {
       font-weight: 800;
-      font-size: 55px;
+      font-size: 5rem;
       color: #ffffff; 
       text-decoration: none;
       font-family: Custom;
@@ -98,6 +97,7 @@
 
 .service-section h2 {
   text-align: center; 
+  font-size: 4rem; 
 }
   .service-buttons{
     display: flex; 
