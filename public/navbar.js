@@ -88,7 +88,7 @@ class Navbar extends HTMLElement {
           background-color: #ffffff; 
           z-index: 2000; 
           cursor: pointer; 
-              font-family: sans-serif;
+            font-family: "Lato", sans-serif;
         }
         .nav-item.login button {
           border: none; 
