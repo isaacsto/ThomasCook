@@ -234,4 +234,6 @@
         iframe {
             border: 1px solid #CCC; 
         }
-   
+        img.rounded-xl.object-contain.h-12 {
+          display: none!important; 
+        }
