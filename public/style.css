@@ -188,8 +188,9 @@ h2 a svg {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .info-section h2{
-  font-family: sans-serif; 
-  letter-spacing: 5px;
+  /* font-family: sans-serif; 
+  letter-spacing: 5px; */
+  text-align: center;
 }
 
 .info-section a:hover {
