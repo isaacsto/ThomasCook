@@ -179,7 +179,7 @@ class Navbar extends HTMLElement {
                data-client_id="378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com"
                data-context="signin"
                data-ux_mode="popup"
-               data-login_uri="http://localhost:5500"
+               data-login_uri="https://thomascookhair.onrender.com"
                data-auto_prompt="false">
           </div>
           <div class="g_id_signin"
