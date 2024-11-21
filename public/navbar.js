@@ -14,7 +14,7 @@ class Navbar extends HTMLElement {
           position: fixed;
           top: 0;
           z-index: 1000;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        
         }
         .logoWrap {
           display: flex; 
@@ -61,13 +61,13 @@ class Navbar extends HTMLElement {
         .nav {
           display: flex; 
           justify-content: flex-end; 
-          box-shadow: inset 0 0.2px 0 black;
           justify-content: flex-end;
           align-items: center;
           background-color: #ffffff;
         }
         ul.nav.nav-tabs {
           margin: 0; 
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
         }
         .nav-item {
           padding-right: 50px; 

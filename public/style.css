@@ -7,7 +7,9 @@
   body {
     margin: 0; 
   }
-  
+  .homepage-wrap {
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  }
   h2 {
     font-size: 30px; 
     font-weight: bold; 
@@ -101,6 +103,7 @@
   }
   .service {
     position: relative; 
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
   }
   .service img {
     max-width: 400px; 
@@ -164,8 +167,7 @@
   text-align:left; 
   padding: 40px 5%; 
   margin: 30px 0; 
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .info-section p {
