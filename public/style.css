@@ -241,6 +241,9 @@
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
             max-width: 1400px; 
         }
-        img.rounded-xl.object-contain.h-12 {
-          display: none!important; 
-        }
+     
+        .object-contain {
+          display: none!important;
+          -o-object-fit: contain;
+          object-fit: contain;
+      }
