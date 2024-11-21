@@ -85,8 +85,7 @@ class Navbar extends HTMLElement {
         }
         .nav-item.login button {
           border: none; 
-          color: #ffffff;
-          background-color: #000000;
+          color: #000; 
           padding: 5px 10px; 
           border-radius: 2px; 
           cursor: pointer;
