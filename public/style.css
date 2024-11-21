@@ -231,8 +231,15 @@
           padding-top: 165px;
         }
         
+        .book-wrap {
+          display: flex; 
+          justify-content: center; 
+        }
+
         iframe {
-            border: 1px solid #CCC; 
+            border-radius: 20px; 
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+            max-width: 1400px; 
         }
         img.rounded-xl.object-contain.h-12 {
           display: none!important; 
