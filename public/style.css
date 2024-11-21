@@ -28,7 +28,7 @@
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     border: none;
     position: relative; 
 }
@@ -66,9 +66,12 @@
   .video-container{
    position: relative; 
     display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100%!important; 
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    /* height: 100%!important;  */
+  }
+  .video-container video {
+    display: flex; 
   }
   .video-tint {
     position: absolute;
