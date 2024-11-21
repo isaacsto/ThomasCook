@@ -21,7 +21,9 @@ class Navbar extends HTMLElement {
         justify-content: space-between; 
           }
       .header-link a h1 {
-        font-family: "Roboto Condensed", sans-serif;
+         font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
      
         }
         .logoWrap {
