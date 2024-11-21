@@ -208,7 +208,17 @@ h2 a svg {
 }
 
        /* ---- grid ---- */
-
+       @media screen and (min-width:1600px) {
+        .grid {
+          display: grid;
+          gap: 1rem;
+          align-items: start;
+          width: fit-content;
+          margin-inline: auto;
+          grid-template-columns: repeat(7, 1fr);
+          padding-top: 120px; 
+          }
+       }
        @media screen and (min-width:1281px) {
         .grid {
           display: grid;
