@@ -144,10 +144,10 @@ class Navbar extends HTMLElement {
       <div id="nav-container">
         <div class="header">
           <div class="header-link">
-            <a href="/" class="main">Thomas Cook Hair</a>
+            <a href="/public" class="main">Thomas Cook Hair</a>
             <div class="logo-container header"></div>
             <div class="logo-wrap-small">
-              <a href="/"><img src="/public/assets/pictures/thincleartwo.png" alt="thomas cook hair logo" /></a> 
+              <a href="/public"><img src="/public/assets/pictures/thincleartwo.png" alt="thomas cook hair logo" /></a> 
             </div>
           </div>
         </div>
