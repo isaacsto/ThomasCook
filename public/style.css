@@ -56,15 +56,7 @@ header {
   transition:  0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.booking-link:hover::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: linear-gradient(90deg, #e0e0e0, #a0a0a0, #606060); 
-  margin-top: 2px;
-  width: 100%;
-  animation: metallic-sheen 2s infinite linear;
-}
+
 
 @keyframes metallic-sheen {
   0% { background-position: 0%; }
@@ -229,15 +221,6 @@ h2 a svg {
   transition:  0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.info-section a:hover::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: linear-gradient(90deg, #e0e0e0, #a0a0a0, #606060); 
-  margin-top: 2px;
-  width: 100%;
-  animation: metallic-sheen 2s infinite linear;
-}
 
 
 

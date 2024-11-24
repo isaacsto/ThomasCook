@@ -69,15 +69,7 @@ class Navbar extends HTMLElement {
           transition:  0.3s ease-in-out; /* Smooth transition for hover effect */
         }
         
-        .header a.main:hover::after {
-          content: '';
-          display: block;
-          height: 2px;
-          background: linear-gradient(90deg, #e0e0e0, #a0a0a0, #606060); 
-          margin-top: 2px;
-          width: 100%;
-          animation: metallic-sheen 2s infinite linear;
-        }
+  
 
 
         ul {
