@@ -264,7 +264,7 @@ h2 a svg {
         width: fit-content;
         margin-inline: auto;
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 120px; 
+        padding-top: 160px; 
         }
       }
 
