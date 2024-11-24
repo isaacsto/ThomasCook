@@ -113,7 +113,7 @@ class Navbar extends HTMLElement {
               font-family: sans-serif;
         }
         .nav-item.login button:hover, .nav-item.book button:hover, .nav-item a:hover {
-          color: rgb(170, 50, 255); 
+          color: #333; 
           font-weight: 600; 
         }
         .nav-item.book a {
