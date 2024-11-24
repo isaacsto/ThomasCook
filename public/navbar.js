@@ -57,9 +57,29 @@ class Navbar extends HTMLElement {
           padding-left: 10px; 
           cursor: pointer;
         }
-        .header a.main:hover {
-          color: rgb(170, 50, 255); 
+      
+
+        .header a.main:hover{
+          color: transparent; /* Make text transparent to apply the gradient */
+          background:linear-gradient(90deg, #e0e0e0, #a0a0a0, #606060); 
+          background-clip: text;
+          -webkit-background-clip: text;
+          text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+          border: none;
+          transition:  0.3s ease-in-out; /* Smooth transition for hover effect */
         }
+        
+        .header a.main:hover::after {
+          content: '';
+          display: block;
+          height: 2px;
+          background: linear-gradient(90deg, #e0e0e0, #a0a0a0, #606060); 
+          margin-top: 2px;
+          width: 100%;
+          animation: metallic-sheen 2s infinite linear;
+        }
+
+
         ul {
           list-style-type: none; 
           padding: 5px; 
