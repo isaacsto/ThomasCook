@@ -160,9 +160,9 @@ class Navbar extends HTMLElement {
         </div>
         <nav id="nav"> 
           <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a href="/about.html">About</a>
-            </li>
+            // <li class="nav-item">
+            //   <a href="/about.html">About</a>
+            // </li>
             <li class="nav-item">
               <a href="/work.html">Work</a> 
             </li>
