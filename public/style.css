@@ -347,4 +347,7 @@ h1.booking-header  {
 .service-buttons {
   flex-direction: column; 
 }
+.nav-item {
+  padding-right: 0; 
+}
       }
