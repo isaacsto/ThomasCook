@@ -166,7 +166,7 @@ class Navbar extends HTMLElement {
             <a href="/" class="main"><h1>Thomas Cook</h1></a>
             <div class="logo-container header"></div>
             <div class="logo-wrap-small">
-              <a href="/"><img src="/assets/pictures/thincleartwo.png" alt="thomas cook hair logo" /></a> 
+              <a href="/"><img src="/assets/pictures/logo.jpeg" alt="thomas cook hair logo" /></a> 
             </div>
           </div>
         </div>
