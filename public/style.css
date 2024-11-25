@@ -346,6 +346,6 @@ a.booking-link {
 .grid {
   display: flex;
   flex-direction: column; 
-  transform: translateY(3%); 
+  transform: translateY(2.5%); 
 }
       }
