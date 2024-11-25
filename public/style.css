@@ -328,8 +328,22 @@ h1.booking-header  {
       }
 
 
-      @media screen and (max-width:641px) {
-        .button-cont {
+
+    .video-container.mobile {
+      display: none; 
+    }
+
+    .video-container.desktop {
+      display: block; 
+    }
+@media screen and (max-width:641px) {
+.video-container.desktop {
+  display: none; 
+}
+.video-container.mobile {
+  display: flex; 
+}
+.button-cont {
           top: 60%; 
         }
 a.booking-link {
@@ -338,8 +352,6 @@ a.booking-link {
 .video-container {
   height: 400px; 
 }
-
-
 .service-buttons {
   flex-direction: column; 
 }
