@@ -176,9 +176,7 @@ class Navbar extends HTMLElement {
             <li class="nav-item">
               <a href="/work.html">Work</a> 
             </li>
-            <li class="nav-item login">
-              <button class="login">Sign in</button>
-            </li> 
+     
             <li class="nav-item book">
               <a href="/book.html">Book</a>
             </li>  
