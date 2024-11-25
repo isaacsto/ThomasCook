@@ -333,9 +333,7 @@ h1.booking-header  {
       display: none; 
     }
 
-    .video-container.desktop {
-      display: block; 
-    }
+
 @media screen and (max-width:641px) {
 .video-container.desktop {
   display: none; 
