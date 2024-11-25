@@ -338,16 +338,12 @@ a.booking-link {
 .video-container {
   height: 400px; 
 }
-.header-link {
-  flex-direction: column; 
-}
+
 .logo-wrap-small {
   display: none;
 }
 .service-buttons {
   flex-direction: column; 
 }
-.nav-item {
-  padding-right: 0; 
-}
+
       }
