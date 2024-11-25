@@ -176,7 +176,9 @@ class Navbar extends HTMLElement {
             <li class="nav-item">
               <a href="/work.html">Work</a> 
             </li>
-      
+            <li class="nav-item login">
+              <button class="login">Sign in</button>
+            </li> 
             <li class="nav-item book">
               <a href="/book.html">Book</a>
             </li>  
@@ -194,7 +196,7 @@ class Navbar extends HTMLElement {
                data-client_id="378842120365-n7r25rll2sqjhc582776d4ebdjp4al5o.apps.googleusercontent.com"
                data-context="signin"
                data-ux_mode="popup"
-               data-login_uri="https://thomascookhair.onrender.com"
+               data-login_uri="https://thomascook.onrender.com"
                data-auto_prompt="false">
           </div>
           <div class="g_id_signin"
