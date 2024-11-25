@@ -343,5 +343,9 @@ a.booking-link {
 .service-buttons {
   flex-direction: column; 
 }
-
+.grid {
+  display: flex;
+  flex-direction: column; 
+  transform: translateY(3%); 
+}
       }
