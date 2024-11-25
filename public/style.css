@@ -333,14 +333,16 @@ h1.booking-header  {
       display: none; 
     }
 
-
+    @media screen and (max-width:768px) {
+      .video-container.desktop {
+        display: none; 
+      }
+      .video-container.mobile {
+        display: flex; 
+      }
+    }
 @media screen and (max-width:641px) {
-.video-container.desktop {
-  display: none; 
-}
-.video-container.mobile {
-  display: flex; 
-}
+
 .button-cont {
           top: 60%; 
         }
