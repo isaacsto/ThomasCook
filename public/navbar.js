@@ -158,9 +158,7 @@ class Navbar extends HTMLElement {
           cursor: pointer;
         }
           @media screen and (max-width:641px){
-            .header-link {
-              flex-direction: column; 
-            }
+        
               .nav-item {
               padding-right: 10px
               }
