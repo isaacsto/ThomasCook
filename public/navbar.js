@@ -34,7 +34,7 @@ class Navbar extends HTMLElement {
           width: 300px; 
         }
         .logo-wrap-small img {
-          width: 200px; 
+          width: 50px; 
         }
         .homepage-wrap {
           height: 100%; 

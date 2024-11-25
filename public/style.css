@@ -339,9 +339,7 @@ a.booking-link {
   height: 400px; 
 }
 
-.logo-wrap-small {
-  display: none;
-}
+
 .service-buttons {
   flex-direction: column; 
 }
