@@ -242,7 +242,7 @@ h2 a svg {
           width: fit-content;
           margin-inline: auto;
           grid-template-columns: repeat(7, 1fr);
-          transform: translateY(25%);
+          transform: translateY(10%);
           }
        }
        @media screen and (min-width:1281px) {
@@ -253,7 +253,7 @@ h2 a svg {
           width: fit-content;
           margin-inline: auto;
           grid-template-columns: repeat(6, 1fr);
-          transform: translateY(25%);
+          transform: translateY(15%);
           }
        }
        @media screen and (max-width:1280px){
