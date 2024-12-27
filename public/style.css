@@ -369,9 +369,15 @@ a.booking-link {
 h1.booking-header {
    font-size: 20px;
 }
+header.flex.items-center.py-2 {
+
+  justify-content: center!important; 
+}
       }
 
       .object-contain {
         
         display: none!important;
     }
+
+  
