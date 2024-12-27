@@ -349,7 +349,7 @@ h1.booking-header  {
         display: none; 
       }
       .video-tint {
-        display: none; 
+        background-color: rgba(0, 0, 0, 0.2);
       }
       a.booking-link {
        
