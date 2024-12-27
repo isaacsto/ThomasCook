@@ -20,10 +20,8 @@ class Navbar extends HTMLElement {
              display: flex; 
         justify-content: space-between; 
           }
-      .header-link a h1 {
-         font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+      .header-link img{
+         max-width:600px;
      
         }
         .logoWrap {
