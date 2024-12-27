@@ -298,7 +298,7 @@ h2 a svg {
           font-family: Custom;
         }
         
-h2.booking-header  {
+h1.booking-header  {
   font-family: 'Custom'; 
 }
 
@@ -362,5 +362,11 @@ a.booking-link {
   display: flex;
   flex-direction: column; 
   transform: translateY(2.5%); 
+}
+.book-wrap {
+  transform: translateY(20%);
+}
+h1.booking-header {
+   font-size: 20px;
 }
       }
