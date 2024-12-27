@@ -340,6 +340,9 @@ h1.booking-header  {
       .video-container.mobile {
         display: flex; 
       }
+      video {
+        display: none; 
+      }
     }
 @media screen and (max-width:641px) {
 
