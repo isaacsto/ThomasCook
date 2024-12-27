@@ -339,11 +339,21 @@ h1.booking-header  {
       }
       .video-container.mobile {
         display: flex; 
+        transform: translateY(6%); 
+      }
+      .video-container.mobile img {
+        width: 100%; 
+      }
       }
       video {
         display: none; 
       }
+      .video-tint {
+        display: none; 
+      }
     }
+
+    
 @media screen and (max-width:641px) {
 
 .button-cont {
