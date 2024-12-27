@@ -157,9 +157,27 @@ class Navbar extends HTMLElement {
         }
           @media screen and (max-width:641px){
         
-              .nav-item {
+            .nav-item {
               padding-right: 10px
               }
+            .header-link {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              }
+              .header-link img {
+              max-width: 100%;
+              }
+              .header {
+              padding:0;
+              }
+              .logo-wrap-small img {
+    max-width: 20px;
+    padding-bottom: 10px;
+}
+    .header a.main  {
+    padding:0; 
+    }
           }
       </style>
 
