@@ -370,3 +370,8 @@ h1.booking-header {
    font-size: 20px;
 }
       }
+
+      .object-contain {
+        
+        display: none!important;
+    }
