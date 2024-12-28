@@ -305,7 +305,6 @@ h1.booking-header  {
         .card-wrap {
           display: flex; 
           justify-content: center; 
-            overflow: auto; 
         }
 
         .book-wrap {
