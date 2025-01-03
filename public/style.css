@@ -316,7 +316,7 @@ h1.booking-header  {
               align-items: center;
               justify-content: center;
               width: 1400px;
-              transform: translateY(30%);
+              margin-top: 200px; 
         }
         iframe {
            
@@ -378,9 +378,7 @@ a.booking-link {
   flex-direction: column; 
   transform: translateY(2%); 
 }
-.book-wrap {
-  transform: translateY(20%);
-}
+
 h1.booking-header {
    font-size: 20px;
 }
