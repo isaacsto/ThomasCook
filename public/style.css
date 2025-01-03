@@ -299,9 +299,9 @@ h2 a svg {
           font-family: Custom;
         }
         
-h1.booking-header  {
-  font-family: 'Custom'; 
-}
+        h1.booking-header  {
+            font-family: 'Custom'; 
+          }
 
         .card-wrap {
           display: flex; 
@@ -319,8 +319,6 @@ h1.booking-header  {
               margin-top: 200px; 
         }
         iframe {
-           
-         
             max-width: 1400px; 
         }
      
@@ -378,7 +376,9 @@ a.booking-link {
   flex-direction: column; 
   transform: translateY(2%); 
 }
-
+iframe {
+  margin-bottom: 200px; 
+}
 h1.booking-header {
    font-size: 20px;
 }
